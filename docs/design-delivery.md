@@ -32,6 +32,19 @@ Direction: DESIGN.md, ENERGY 2 / RHYTHM 3 / MOTION 1.
   image import and download: existing 14 browser workflows passed after redesign.
 
 ## Limits
+
+## Typography follow-up
+- Hard gate PASS: 320px overflow and mobile export checks passed with larger text.
+- Purpose gate PASS: 16px reading / 14px controls / 13px captions replaces tiny
+  labels; rem units and wrapping serve readability (DESIGN.md).
+- Liveliness PASS: existing 2/3/1 dials, redaction motif and lime action hierarchy
+  retained; no new decoration or image assets.
+- Craftsmanship PASS: strict TypeScript production build and all 15 browser tests
+  passed; desktop editor and mobile landing/export screenshots visually inspected.
+  Design test records navigation, chooser, mode demos, accordion and keyboard entry
+  without page errors. Existing workflow suite covers editing and export actions.
+
+## Browser scope
 Verified in installed Chrome. Other browser engines and field Web Vitals were
 not measured. No hosting publication occurred. Existing privacy/OCR limitations
 remain documented in README.md.

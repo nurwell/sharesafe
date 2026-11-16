@@ -88,6 +88,58 @@ a[href],summary,select,label,input[type=checkbox] { cursor:pointer; }
   .mode-section,.process-section,.privacy-ledger,.new-faq { gap:8%; }
   .mode-section-intro h2,.privacy-ledger h2 { font-size:34px; }
 }
+
+/* Reading scale: supporting copy must remain readable at normal browser zoom. */
+:root { --reading-text:1rem; --control-text:.875rem; --caption-text:.8125rem; }
+.landing-v2 .opening-explanation,.landing-v2 .mode-section-intro>p:last-child,
+.landing-v2 .mode-rows p,.landing-v2 .privacy-ledger p,
+.landing-v2 .new-faq details p,.landing-v2 .process-section li p { font-size:var(--reading-text); line-height:1.7; }
+.landing-v2 .new-header nav,.landing-v2 .new-faq summary,
+.landing-v2 .sample-document p,.landing-v2 .sample-actions .button,
+.landing-v2 .mode-rows .text-button { font-size:var(--control-text); }
+.landing-v2 .section-label,.landing-v2 .header-note,.landing-v2 .import-caption,
+.landing-v2 .sample-heading,.landing-v2 .sample-label,.landing-v2 .sample-document-heading,
+.landing-v2 .sample-code,.landing-v2 .sample-covered,.landing-v2 .sample-annotation,
+.landing-v2 .sample-actions p,.landing-v2 .capability-strip,.landing-v2 .new-footer>span,
+.landing-v2 .mode-index,.landing-v2 .process-section li::marker { font-size:var(--caption-text); }
+.landing-v2 .process-section strong,.landing-v2 .privacy-facts h3 { font-size:1.0625rem; }
+.sample-heading,.sample-document-heading,.capability-strip { flex-wrap:wrap; }
+.sample-label { white-space:normal; }
+.sample-document { overflow-wrap:anywhere; }
+.editor-app .button,.editor-app .segmented button,.editor-app select,
+.editor-app .finding-value,.editor-app .text-button,.editor-app .default-style { font-size:var(--control-text); }
+.editor-app .small,.editor-app .local-note,.editor-app .editor-filename,
+.editor-app .canvas-instructions,.editor-app .finding-kind,.editor-app .finding-count,
+.editor-app .ocr-status,.editor-app .editor-status,.editor-app .zoom-label,
+.editor-app .developer-checklist label,.editor-app .notice,
+.editor-app .export-stats,.editor-app .review-check,.editor-app .picked-text,
+.editor-app .export-dialog>p.muted,.editor-app .export-dialog>p.small,
+.editor-app .findings-panel>p,.editor-app .empty-findings>span { font-size:var(--caption-text); line-height:1.6; }
+.editor-app .findings-panel { width:330px; }
+.editor-app .finding-count { letter-spacing:0; gap:10px; flex-wrap:wrap; }
+.editor-app .editor-status { flex-wrap:wrap; }
+.editor-app .canvas-quick-actions { gap:12px; }
+.editor-app .context-toolbar { width:max-content; }
+@media(max-width:680px) {
+  .new-header { height:auto; min-height:88px; flex-wrap:wrap; gap:12px; padding:16px 0; }
+  .new-header nav { flex-wrap:wrap; gap:16px; }
+  .sample-heading,.sample-document-heading { flex-direction:column; align-items:flex-start; gap:8px; }
+  .sample-actions p br { display:revert; }
+  .capability-strip { grid-template-columns:1fr; }
+  .editor-app .editor-options { flex-wrap:wrap; }
+  .editor-app .segmented button { padding:8px; }
+  .editor-app .findings-panel { width:auto; }
+  .editor-app .canvas-instructions { flex-wrap:wrap; gap:6px; }
+  .editor-app .canvas-instructions>span { max-width:100%; width:100%; }
+  .editor-app .canvas-quick-actions .text-button { font-size:var(--caption-text); }
+  .editor-app .editor-status>span:last-child { display:none; }
+  .editor-app .floating-tools .icon-button { width:30px; min-width:30px; }
+  .editor-app .zoom-label { min-width:40px; }
+  .editor-app .export-actions { flex-wrap:wrap; }
+  .editor-app .export-actions .button { flex:1; }
+  .editor-app .export-styles { width:100%; }
+  .editor-app .export-styles button { flex:1; padding:8px 5px; white-space:normal; }
+}
 @media(max-width:680px) {
   .new-header { height:76px; gap:15px; margin:0 6%; }.new-header .wordmark { font-size:21px; gap:5px; }.new-header .wordmark svg { width:20px; }.new-header nav { gap:14px; font-size:10px; }
   .opening { grid-template-columns:1fr; padding:39px 6% 30px; gap:36px; }.section-label { font-size:8px; letter-spacing:.4px; }

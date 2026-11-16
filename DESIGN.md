@@ -18,3 +18,6 @@ editorial workspace style, ENERGY 2 / RHYTHM 3 / MOTION 1.
   Only floating editing controls receive elevation to distinguish them from pixels.
 - No new image assets, logos, or illustrations are needed.
 - Motion is limited to control feedback; respect reduced motion.
+- Readability: body copy uses 16px, controls 14px and supporting labels 13px at
+  the default root size. Rem units respect user font preferences; wrapping and
+  wider findings give larger text room without changing screenshot pixels.
