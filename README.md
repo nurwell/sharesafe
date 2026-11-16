@@ -2,6 +2,8 @@
 
 **Share screenshots. Not secrets.**
 
+**[Open ShareSafe](https://sharesafe.nurseyt-tech.workers.dev/)**
+
 A free, open-source screenshot editor for covering sensitive details before
 sharing an image. Editing and text recognition run locally in your browser.
 No account, backend, or screenshot uploads.
