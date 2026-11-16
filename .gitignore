@@ -10,4 +10,6 @@ intructions.md
 start-sharesafe.cmd
 public/ocr/
 .env*
+.dev.vars*
+.wrangler/
 !.env.example

@@ -58,6 +58,10 @@ npm run test:e2e
 
 The production build is in `dist`, ready for static hosting.
 
+For Cloudflare Workers, connect this repository with build command
+`npm run build` and deploy command `npx wrangler deploy`. The included
+`wrangler.toml` serves `dist` as static assets; no Worker script or backend is needed.
+
 ## License
 
 [MIT](LICENSE). Bundled dependencies retain their respective licenses.
