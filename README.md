@@ -32,38 +32,6 @@ sensitive information, especially small, rotated, low-contrast, or non-English
 text. Matching works on complete recognized words. Clipboard support varies by
 browser, and offline startup is not guaranteed.
 
-## Development
-
-Requires Node.js 22.12+ and npm.
-
-```sh
-git clone https://github.com/nurwell/sharesafe.git
-cd sharesafe
-npm ci
-npm run dev
-```
-
-OCR assets are bundled locally during installation. Open the URL printed by Vite.
-
-```sh
-npm run typecheck
-npm test
-npm run build
-```
-
-For browser tests:
-
-```sh
-npx playwright install chromium
-npm run test:e2e
-```
-
-The production build is in `dist`, ready for static hosting.
-
-For Cloudflare Workers, connect this repository with build command
-`npm run build` and deploy command `npx wrangler deploy`. The included
-`wrangler.toml` serves `dist` as static assets; no Worker script or backend is needed.
-
 ## License
 
 [MIT](LICENSE). Bundled dependencies retain their respective licenses.
